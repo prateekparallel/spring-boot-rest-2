@@ -28,16 +28,14 @@ public class StudentRegistration {
 		studentRecords.add(std);
 	}
 	
-	private void Remove(String registrationNumber) {
-		
-	}
-	
 	public String upDateStudent(Student std) {
 		
 		for(int i=0; i<studentRecords.size(); i++)
         {
             Student stdn = studentRecords.get(i);
-            if(stdn.getRegistrationNumber() == std.getRegistrationNumber()) {
+            System.out.println(stdn.getRegistrationNumber());
+            System.out.println(std.getRegistrationNumber());
+            if(stdn.getRegistrationNumber().equals(std.getRegistrationNumber())) {
             	studentRecords.set(i, std);//update the new record
             	return "Update successful";
             }
@@ -52,7 +50,7 @@ public class StudentRegistration {
 		for(int i=0; i<studentRecords.size(); i++)
         {
             Student stdn = studentRecords.get(i);
-            if(stdn.getRegistrationNumber() == registrationNumber) {
+            if(stdn.getRegistrationNumber().equals(registrationNumber)) {
             	studentRecords.remove(i);//update the new record
             	return "Delete successful";
             }
