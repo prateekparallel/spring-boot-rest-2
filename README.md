@@ -11,3 +11,13 @@ Prerequisites for this project:
 4. Also for testing please download and install SOAPUI tool from here https://www.soapui.org/downloads/soapui.html
 
 The first example I am going to explain is about HTTP GET request, second example will be about HTTP POST request, third example about HTTP PUT request and fourth example is for HTTP DELETE request. In these entire examples I am going to use JSON Representation.
+
+Before checkout this project create a folder under C drive like C:\Projects
+ 
+Now open command prompt
+
+1. cd c:\Projects
+2. check out the mail branch
+3. cd spring-boot-rest-2
+4. Execute - mvnw clean package
+5. start the server - java -jar target\spring-boot-rest-2-0.0.1-SNAPSHOT.jar
